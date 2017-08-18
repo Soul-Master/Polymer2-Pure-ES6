@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>test-app</title>
+    <script src="lib/polymer.js"></script>
+</head>
+
+<body>
+    <test-container></test-container>
+
+    <script>
+        Polymer.Element.prototype._attachDom = function (node) {
+        this.appendChild(node);
+        };
+    </script>
+    <script src="js/test-element.js"></script>
+    <script src="js/test-container.js"></script>
+</body>
+
+</html>
